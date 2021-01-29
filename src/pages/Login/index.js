@@ -16,7 +16,7 @@ function Login() {
                     <Button type="submit" value="Acessar" onClick={console.log('OK')}/>
                 </div>
                 <div className="signup">
-                    <a href="#">
+                    <a href="/signup">
                         Ainda não possui um código? <span>Cadastre-se</span>
                     </a>
                 </div>
