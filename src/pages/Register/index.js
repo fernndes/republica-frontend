@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 import TextInput from '../../components/TextInput'
 import Button from '../../components/Button'
 
-import { register } from '../../services/api'
+import api from '../../services/api'
 
 import "./styles.css"
 
@@ -33,7 +33,7 @@ function Login() {
         };
 
         try {
-            const response = await register(data);
+            const response = await api.post('users', data);
 
             alert(`Seu código de acesso é: ${response.data.id}`);
 
