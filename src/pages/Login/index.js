@@ -7,7 +7,7 @@ import "./styles.css"
 
 function Login() {
     return (
-        <div className="container">
+        <div className="container-login">
             <section>
                 <h2 class="title">Entre com o seu código de acesso</h2>
 

@@ -3,7 +3,7 @@
     --border-radius-container: 10px;
 }
 
-.container {
+.container-login {
     display: flex;
     align-items: center;
     justify-content: center;
