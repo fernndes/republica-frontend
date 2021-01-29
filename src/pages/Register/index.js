@@ -37,7 +37,7 @@ function Login() {
 
             alert(`Seu código de acesso é: ${response.data.id}`);
 
-            // history.push('/');
+            history.push('/');
 
         } catch (err) {
             console.log(err)

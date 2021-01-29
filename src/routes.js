@@ -14,10 +14,11 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
-                    <Register/>
+                    <Login/>
                 </Route>
                 <Route path="/signup">
-                    <Login/>
+                    <Register/>
+                    
                 </Route>
                 <Route path="/profile">
                     <Profile/>
