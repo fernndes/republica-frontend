@@ -4,7 +4,7 @@ Este projeto tem como objetivo criar uma plataforma fictícia para conectar pess
 
 ## ETAPAS
 
-Agentes: Candidatos e "Recrutadores"(pessoa que anuncia o interesse).
+Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
 
 ### ETAPA 1/4
 
