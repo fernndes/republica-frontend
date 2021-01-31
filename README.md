@@ -9,41 +9,41 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia o interesse).
 ### ETAPA 1/4
 
 CANDIDATOS:
-[ ] Listar moradias disponíveis;
--[] Visualizar contato do "recrutador".
+-[] Listar moradias disponíveis; <br/>
+-[] Visualizar contato do "recrutador". <br/>
 
 "RECRUTADORES":
--[] Cadastrar-se na plataforma;
--[] Autenticar-se na plataforma;
--[] Cadastrar moradia;
--[] Excluir moraria;
--[] Listar moradias cadastradas.
+-[] Cadastrar-se na plataforma; <br/>
+-[] Autenticar-se na plataforma; <br/>
+-[] Cadastrar moradia; <br/>
+-[] Excluir moraria; <br/>
+-[] Listar moradias cadastradas. <br/>
 
 ### ETAPA 2/4
 
 CANDIDATOS:
--[] Filtrar moradias;
--[] Visualizar moradias no mapa.
+-[] Filtrar moradias; <br/>
+-[] Visualizar moradias no mapa. <br/>
 
 "RECRUTADORES":
--[] Adicionar foto da moradia;
--[] Adicionar calendario com horários para visitas.
+-[] Adicionar foto da moradia; <br/>
+-[] Adicionar calendario com horários para visitas. <br/>
 
 ### ETAPA 3/4
 
 CANDIDATOS:
--[] Cadastrar-se na plataforma;
--[] Autenticar-se na plataforma.
+-[] Cadastrar-se na plataforma; <br/>
+-[] Autenticar-se na plataforma. <br/>
 
 "RECRUTADORES":
--[] Definir critérios de avaliação;
--[] Avaliar candidatos após visita.
+-[] Definir critérios de avaliação; <br/>
+-[] Avaliar candidatos após visita. <br/>
 
 ### ETAPA 4/4
 
-Recomendar candidatos para recrutadores.
+Recomendar candidatos para recrutadores. <br/>
 
-CANDIDATOS:
+CANDIDATOS: <br/>
 -[] Responder formulário para definição de perfil virtual.
 
 
