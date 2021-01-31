@@ -9,7 +9,7 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia o interesse).
 ### ETAPA 1/4
 
 CANDIDATOS:
-- [] Listar moradias disponíveis;
+[ ] Listar moradias disponíveis;
 -[] Visualizar contato do "recrutador".
 
 "RECRUTADORES":
