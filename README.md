@@ -6,10 +6,10 @@ Este projeto tem como objetivo criar uma plataforma fictícia para conectar pess
 
 Agentes: Candidatos e "Recrutadores"(pessoa que anuncia o interesse).
 
-# ETAPA 1/4
+### ETAPA 1/4
 
 CANDIDATOS:
--[] Listar moradias disponíveis;
+- [] Listar moradias disponíveis;
 -[] Visualizar contato do "recrutador".
 
 "RECRUTADORES":
@@ -19,7 +19,7 @@ CANDIDATOS:
 -[] Excluir moraria;
 -[] Listar moradias cadastradas.
 
-# ETAPA 2/4
+### ETAPA 2/4
 
 CANDIDATOS:
 -[] Filtrar moradias;
@@ -29,7 +29,7 @@ CANDIDATOS:
 -[] Adicionar foto da moradia;
 -[] Adicionar calendario com horários para visitas.
 
-# ETAPA 3/4
+### ETAPA 3/4
 
 CANDIDATOS:
 -[] Cadastrar-se na plataforma;
@@ -39,7 +39,7 @@ CANDIDATOS:
 -[] Definir critérios de avaliação;
 -[] Avaliar candidatos após visita.
 
-# ETAPA 4/4
+### ETAPA 4/4
 
 Recomendar candidatos para recrutadores.
 
