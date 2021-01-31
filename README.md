@@ -8,11 +8,11 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia o interesse).
 
 ### ETAPA 1/4
 
-CANDIDATOS:
--[] Listar moradias disponíveis; <br/>
+CANDIDATOS: <br/>
+-[x] Listar moradias disponíveis; <br/>
 -[] Visualizar contato do "recrutador". <br/>
 
-"RECRUTADORES":
+"RECRUTADORES": <br/>
 -[] Cadastrar-se na plataforma; <br/>
 -[] Autenticar-se na plataforma; <br/>
 -[] Cadastrar moradia; <br/>
@@ -21,21 +21,21 @@ CANDIDATOS:
 
 ### ETAPA 2/4
 
-CANDIDATOS:
+CANDIDATOS: <br/>
 -[] Filtrar moradias; <br/>
 -[] Visualizar moradias no mapa. <br/>
 
-"RECRUTADORES":
+"RECRUTADORES": <br/>
 -[] Adicionar foto da moradia; <br/>
 -[] Adicionar calendario com horários para visitas. <br/>
 
 ### ETAPA 3/4
 
-CANDIDATOS:
+CANDIDATOS: <br/>
 -[] Cadastrar-se na plataforma; <br/>
 -[] Autenticar-se na plataforma. <br/>
 
-"RECRUTADORES":
+"RECRUTADORES": <br/>
 -[] Definir critérios de avaliação; <br/>
 -[] Avaliar candidatos após visita. <br/>
 
