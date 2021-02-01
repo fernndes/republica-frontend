@@ -36,7 +36,7 @@ function NewHome() {
                 }
             });
 
-            history.push('/');
+            history.push('/profile');
 
         } catch (err) {
             console.log(err)
