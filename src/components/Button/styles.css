@@ -10,4 +10,5 @@
     outline: none;
     background-image: linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%);
     margin-top: 20px;
+    cursor: pointer;
 }

@@ -8,6 +8,7 @@ import {
 import Login from '../src/pages/Login'
 import Register from '../src/pages/Register'
 import Profile from '../src/pages/Profile'
+import NewHome from '../src/pages/NewHome'
 
 export default function Routes() {
     return (
@@ -22,7 +23,10 @@ export default function Routes() {
                 </Route>
                 <Route path="/profile">
                     <Profile/>
-                </Route>                
+                </Route>
+                <Route path="/new-home">
+                    <NewHome/>
+                </Route>               
             </Switch>
         </BrowserRouter>
     )

@@ -1,19 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 
 import TextInput from '../../components/TextInput'
 import Button from '../../components/Button'
 
+import api from '../../services/api'
+
 import "./styles.css"
 
 function Login() {
-    return (
-        <div className="container-login">
-            <section>
-                <h2 class="title">Entre com o seu código de acesso</h2>
+    const [key, setKey] = useState('')
+    const history = useHistory()
 
+    async function handleLogin(e){
+        e.preventDefault()
+
+        try {
+            await api.post('sessions', { key })
+
+            localStorage.setItem('key', key)
+
+            history.push('/profile')
+        } catch (error) {
+            alert('Falha no Login, tente novamente.')
+        }
+    }
+    return (
+        <div className="container">
+            <section className="section">
+                <h2 class="title">Entre com o seu código de acesso</h2>
                 <div className="form">
-                    <TextInput id="outlined-basic" label="Código de acesso" variant="outlined" />
-                    <Button type="submit" value="Acessar" onClick={console.log('OK')}/>
+                    <TextInput id="key" label="Código de acesso" value={key} variant="outlined" onChange={e => setKey(e.target.value)} required/>
+                    <Button type="submit" value="Acessar" onClick={handleLogin}/>
                 </div>
                 <div className="signup">
                     <a href="/signup">

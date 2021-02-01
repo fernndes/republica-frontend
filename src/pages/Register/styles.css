@@ -3,49 +3,6 @@
     --border-radius-container: 10px;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.container-register {
     background-image: linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%); /* #014F68 or #0086B0, #006C8E*/ 
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px 40px 40px;
-    border-radius: var(--border-radius-container);
-    background-color: white;
-}
-
-.form {
-    display: flex;  
-    justify-content: center;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.title {
-    color: #484848;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-.signup {    
-    margin-top: 40px;
-}
-
-.signup a {
-    color: #484848;
-}
-
-.signup span {
-    color: #2196F3;
-    text-decoration: underline;
 }

@@ -3,9 +3,9 @@ import React from 'react'
 import "./styles.css"
 
 function Button(props) {
-    const { type, value, onClick } = props;
+    const { type, value, onClick, className } = props;
     return (
-        <button type={type} className="submit-button" onClick={onClick}>{value} </button>
+        <button type={type} className={`submit-button ${className}`} onClick={onClick}>{value} </button>
     )
 }
 

@@ -20,16 +20,19 @@ const theme = createMuiTheme({
 
 
 export default function TextInput(props) {
-    const { label, id, variant, onChange } = props; //"outlined-basic"
+    const { label, id, variant, onChange, style, required} = props; //"outlined-basic"
     const classes = useStyles();
     return (
         <ThemeProvider theme={theme}>
             <TextField
                 onChange={onChange}
                 id={id}
-                label={label}
+                label={label}                
+                style={style}
                 className={classes.margin}
-                variant={variant} />
+                variant={variant}    
+                required={required ? true : false}            
+                />
         </ThemeProvider>
     )
 }

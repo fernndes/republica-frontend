@@ -4,38 +4,7 @@
 }
 
 .container-login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     background-image: linear-gradient(to right, #2196F3 30%, #21CBF3 90%); /* #014F68 or #0086B0, #006C8E*/ 
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px 40px 40px;
-    border-radius: var(--border-radius-container);
-    background-color: white;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.title {
-    color: #484848;
-    font-weight: 200;
-    line-height: 1.5;
 }
 
 .signup {    

@@ -1,3 +1,8 @@
+:root {
+  --border-radius-button: 5px;
+  --border-radius-container: 10px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 80px;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #905DDE 30%, #7633DE  90%); /* #014F68 or #0086B0, #006C8E*/ 
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px 40px 40px;
+  border-radius: var(--border-radius-container);
+  background-color: white;
+}
+
+.form {
+  display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+  color: #484848;
+  font-weight: 500;
+  line-height: 1.5;
 }
