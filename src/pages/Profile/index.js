@@ -22,28 +22,30 @@ export default function Profile() {
                 Authorization: keyStored
             }
         }).then(response => {
-            getHome(response.data)
+            getHome(response.data.home)
         })
     }, [keyStored])
 
     function handleLogout() {
-        return localStorage.clear()
+        localStorage.clear()
+
+        return history.push("/new-home")
       }
 
     return (
-        <div className="container">
+        <div className="container container-profile">
             <div className="header-profile">
                 <h1>Buenos dias</h1>
                 <div className="menu-profile">
                     <Button type="submit" value="Meus critérios" className="btn-evaluate" />
-                    <Button type="submit" value="Nova moradia" className="btn-home" />
-                    <a href="/" onClick={handleLogout}><ExitToAppIcon fontSize="large" style={{ color: "white" }} /></a>
+                    <Button type="submit" value="Nova moradia" className="btn-home" onClick={handleLogout}/>
+                    <a href="/"><ExitToAppIcon fontSize="large" style={{ color: "white" }} /></a>
                 </div>
             </div>
             <section className="section-profile-container">
-                {getHome.map((item, index) => {
+                {home.map((item, index) => {
                     return (
-                        <div className="section section-profile">
+                        <div className="section section-profile" id={index}>
                             <h3 className="card-title-profile">{item.title}</h3>
                             <p className="card-address-profile">{item.address}, {item.city} - {item.uf}</p>
                             <p className="card-description-profile">{item.description}</p>

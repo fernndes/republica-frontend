@@ -29,9 +29,6 @@ function NewHome() {
             description,
             title
         };
-
-        
-
         try {
             await api.post('home', data, {
                 headers: {

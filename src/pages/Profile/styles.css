@@ -1,5 +1,5 @@
 .container-profile {
-    background-image: linear-gradient(to right, #905DDE 30%, #7633DE  90%); /* #014F68 or #0086B0, #006C8E*/ 
+    justify-content: flex-start;
 }
 
 .header-profile {
@@ -30,8 +30,8 @@
 
 .section-profile-container {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    background-color: transparent;
-    margin-top: 20px;    
+    margin-top: 20px;
 }

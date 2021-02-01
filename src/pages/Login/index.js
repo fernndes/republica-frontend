@@ -16,7 +16,7 @@ function Login() {
         e.preventDefault()
 
         try {
-            await api.post('sessions', { key })
+            await api.post('sessions', { key });
 
             localStorage.setItem('key', key)
 

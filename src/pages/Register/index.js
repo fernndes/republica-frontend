@@ -11,11 +11,11 @@ import "./styles.css"
 
 
 function Login() {
-    const [name, getName] = useState('');
-    const [email, getEmail] = useState('');
-    const [whatsapp, getWhats] = useState('');
-    const [city, getCity] = useState('');
-    const [uf, getUf] = useState('');
+    const [name, getName] = useState('Teset');
+    const [email, getEmail] = useState('teste@teste.com');
+    const [whatsapp, getWhats] = useState('12345678911');
+    const [city, getCity] = useState('Tsest');
+    const [uf, getUf] = useState('TF');
 
     const history = useHistory();
 
