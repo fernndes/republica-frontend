@@ -23,6 +23,7 @@ export default function Profile() {
             }
         }).then(response => {
             getHome(response.data.home)
+            console.log(response.data)
         })
     }, [keyStored])
 
@@ -35,7 +36,7 @@ export default function Profile() {
     return (
         <div className="container container-profile">
             <div className="header-profile">
-                <h1>Buenos dias</h1>
+                <h1>Bem-vindo de volta!</h1>
                 <div className="menu-profile">
                     <Button type="submit" value="Meus critérios" className="btn-evaluate" />
                     <Button type="submit" value="Nova moradia" className="btn-home" onClick={handleLogout}/>

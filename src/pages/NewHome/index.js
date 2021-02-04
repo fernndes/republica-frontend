@@ -47,7 +47,7 @@ function NewHome() {
     return (
         <div className="container">
             <section className="section">
-                <h2 class="title">Cadastrar moradia</h2>
+                <h2 className="title">Cadastrar moradia</h2>
                 <div className="form">
                     <TextInput id="title" label="Título" variant="outlined" value={title} onChange={e => getTitle(e.target.value)} required />
                     <TextInput id="address" label="Endereço" variant="outlined" value={address} onChange={e => getAddress(e.target.value)} required />
@@ -55,7 +55,7 @@ function NewHome() {
                         <TextInput id="city" label="Cidade" variant="outlined" value={city} onChange={e => getCity(e.target.value)} required />
                         <TextInput id="uf" label="UF" variant="outlined" value={uf} onChange={e => getUf(e.target.value)} required />
                     </div>                    
-                    <TextInput id="description" label="Descrição" variant="outlined" value={uf} onChange={e => getDescription(e.target.value)} required />
+                    <TextInput id="description" label="Descrição" variant="outlined" value={description} onChange={e => getDescription(e.target.value)} required />
                     <Button type="submit" value="Cadastrar" onClick={handleRegisterHome} />
                 </div>
             </section>

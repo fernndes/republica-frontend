@@ -16,7 +16,9 @@ function Login() {
         e.preventDefault()
 
         try {
-            await api.post('sessions', { key });
+            await api.post('sessions', { key }).then((res) => console.log(res));
+
+            console.log()
 
             localStorage.setItem('key', key)
 
@@ -28,7 +30,7 @@ function Login() {
     return (
         <div className="container">
             <section className="section">
-                <h2 class="title">Entre com o seu código de acesso</h2>
+                <h2 className="title">Entre com o seu código de acesso</h2>
                 <div className="form">
                     <TextInput id="key" label="Código de acesso" value={key} variant="outlined" onChange={e => setKey(e.target.value)} required/>
                     <Button type="submit" value="Acessar" onClick={handleLogin}/>

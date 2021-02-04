@@ -48,7 +48,7 @@ function Login() {
     return (
         <div className="container">
             <section className="section">
-                <h2 class="title">Cadastro</h2>
+                <h2 className="title">Cadastro</h2>
                 <div className="form">
                     <div className="personal-register">
                         <TextInput id="name" label="Name" variant="outlined" value={name} onChange={e => getName(e.target.value)} required />
