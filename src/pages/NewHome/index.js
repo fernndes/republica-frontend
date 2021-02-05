@@ -30,11 +30,13 @@ function NewHome() {
             title
         };
         try {
+            console.log(keyStored)
             await api.post('home', data, {
                 headers: {
-                    Authorization: keyStored
+                    Authorization: keyStored,
+                    "Access-Control-Allow-Origin": "*"
                 }
-            });
+            }).then((res) => console.log(res));
 
             history.push('/profile');
 

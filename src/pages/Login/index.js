@@ -16,9 +16,11 @@ function Login() {
         e.preventDefault()
 
         try {
-            await api.post('sessions', { key }).then((res) => console.log(res));
-
-            console.log()
+            await api.post('sessions', { key }, { 
+                headers: {
+                "Access-Control-Allow-Origin": "*"
+                }
+             }).then((res) => console.log(res));
 
             localStorage.setItem('key', key)
 

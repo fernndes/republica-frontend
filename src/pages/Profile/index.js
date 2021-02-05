@@ -17,9 +17,11 @@ export default function Profile() {
     const keyStored = localStorage.getItem('key')
 
     useEffect(() => {
+        console.log(keyStored)
         api.get('profile', {
             headers: {
-                Authorization: keyStored
+                Authorization: keyStored,
+                "Access-Control-Allow-Origin": "*"
             }
         }).then(response => {
             getHome(response.data.home)
@@ -30,7 +32,7 @@ export default function Profile() {
     function handleLogout() {
         localStorage.clear()
 
-        return history.push("/new-home")
+        return history.push("/")
       }
 
     return (
@@ -39,8 +41,8 @@ export default function Profile() {
                 <h1>Bem-vindo de volta!</h1>
                 <div className="menu-profile">
                     <Button type="submit" value="Meus critérios" className="btn-evaluate" />
-                    <Button type="submit" value="Nova moradia" className="btn-home" onClick={handleLogout}/>
-                    <a href="/"><ExitToAppIcon fontSize="large" style={{ color: "white" }} /></a>
+                    <a href="/new-home"><Button type="submit" value="Nova moradia" className="btn-home"/></a>
+                    <a href="/" onClick={handleLogout}><ExitToAppIcon fontSize="large" style={{ color: "white" }} /></a>
                 </div>
             </div>
             <section className="section-profile-container">
