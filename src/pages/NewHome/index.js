@@ -13,7 +13,8 @@ function NewHome() {
     const [uf, getUf] = useState('');
     const [address, getAddress] = useState('');
     const [description, getDescription] = useState('');
-    const [title, getTitle] = useState('')
+    const [title, getTitle] = useState('');
+    const [cep, getCEP] = useState('');
 
     const history = useHistory();
 
@@ -46,20 +47,32 @@ function NewHome() {
         }
     }
 
+    async function pesquisarCep(value) {
+        const data = await fetch(`https://viacep.com.br/ws/${value}/json/`).then(res => res.json());
+        getCity(data.localidade);
+        getAddress(data.logradouro);
+        getUf(data.uf);
+    }
+
     return (
         <div className="container">
-            <section className="section">
-                <h2 className="title">Cadastrar moradia</h2>
-                <div className="form">
-                    <TextInput id="title" label="Título" variant="outlined" value={title} onChange={e => getTitle(e.target.value)} required />
-                    <TextInput id="address" label="Endereço" variant="outlined" value={address} onChange={e => getAddress(e.target.value)} required />
-                    <div>
-                        <TextInput id="city" label="Cidade" variant="outlined" value={city} onChange={e => getCity(e.target.value)} required />
-                        <TextInput id="uf" label="UF" variant="outlined" value={uf} onChange={e => getUf(e.target.value)} required />
-                    </div>                    
-                    <TextInput id="description" label="Descrição" variant="outlined" value={description} onChange={e => getDescription(e.target.value)} required />
-                    <Button type="submit" value="Cadastrar" onClick={handleRegisterHome} />
+            <section className="section-new-home">
+                <h2 className="title" style={{ alignSelf: 'center', marginBottom: 40 }}>Cadastrar moradia</h2>
+                <input maxLength="100" autoComplete="off" className="input-new-home" id="title" placeholder="Título" value={title} onChange={e => getTitle(e.target.value)} required />
+                <input maxLength="8" autoComplete="off" className="input-new-home" type="text" id="cep" placeholder="CEP" value={cep} onChange={function (e) {
+                    getCEP(e.target.value)
+                    const size = e.target.value.length;
+                    if (size === 8) {
+                        pesquisarCep(e.target.value);
+                    }
+                }} required />
+                <input autoComplete="off" className="input-new-home" id="address" placeholder="Endereço" value={address} onChange={e => getAddress(e.target.value)} required disabled/>
+                <div style={{ display: 'flex', marginBottom: 10 }}>                    
+                    <input autoComplete="off" className="mgRight" style={{ flex: 1 }} type="text" id="city" placeholder="Cidade" value={city} required disabled />
+                    <input type="text" id="uf" placeholder="UF" value={uf} required disabled />
                 </div>
+                <input maxLength="520" autoComplete="off" className="input-new-home" id="description" placeholder="Descrição" value={description} onChange={e => getDescription(e.target.value)} required />
+                <Button type="submit" value="Cadastrar" onClick={handleRegisterHome} />
             </section>
         </div>
     )

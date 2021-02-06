@@ -31,12 +31,10 @@ function Login() {
     }
     return (
         <div className="container">
-            <section className="section">
-                <h2 className="title">Entre com o seu código de acesso</h2>
-                <div className="form">
-                    <TextInput id="key" label="Código de acesso" value={key} variant="outlined" onChange={e => setKey(e.target.value)} required/>
-                    <Button type="submit" value="Acessar" onClick={handleLogin}/>
-                </div>
+            <section className="section-login">
+                <h2 className="title-login">Entre com o seu código de acesso</h2>
+                <TextInput type="text" id="key" label="Código de acesso" value={key} onChange={e => setKey(e.target.value)} required/>
+                <Button type="submit" value="Acessar" onClick={handleLogin}/>          
                 <div className="signup">
                     <a href="/signup">
                         Ainda não possui um código? <span>Cadastre-se</span>

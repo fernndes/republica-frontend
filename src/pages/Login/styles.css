@@ -2,11 +2,6 @@
     --border-radius-button: 5px;
     --border-radius-container: 10px;
 }
-
-.container-login {
-    background-image: linear-gradient(to right, #2196F3 30%, #21CBF3 90%); /* #014F68 or #0086B0, #006C8E*/ 
-}
-
 .signup {    
     margin-top: 40px;
 }
@@ -19,3 +14,14 @@
     color: #2196F3;
     text-decoration: underline;
 }
+
+.section-login {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: white;
+}
+

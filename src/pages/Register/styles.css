@@ -6,3 +6,31 @@
 .container-register {
     background-image: linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%); /* #014F68 or #0086B0, #006C8E*/ 
 }
+
+.section-register {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.input-register {
+    flex: 1;
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+
+#uf {
+    width: 50px;
+}
+
+.mgRight {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-register {
+        min-width: 0;
+    }
+}

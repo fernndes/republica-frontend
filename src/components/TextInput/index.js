@@ -1,38 +1,20 @@
 import React from 'react'
-import { TextField, Button, } from '@material-ui/core';
-import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-    },
-    margin: {
-        margin: theme.spacing(1),
-    },
-}));
-
-const theme = createMuiTheme({
-    palette: {
-        primary: { main: '#2196F3' },
-    },
-});
-
+import './styles.css'
 
 export default function TextInput(props) {
-    const { label, id, variant, onChange, style, required} = props; //"outlined-basic"
-    const classes = useStyles();
+    const { label, id, onChange, style, required, type, onBlur} = props;
     return (
-        <ThemeProvider theme={theme}>
-            <TextField
+            <input
+                type={type}
                 onChange={onChange}
                 id={id}
+                autoComplete="off"
+                placeholder={label}
                 label={label}                
                 style={style}
-                className={classes.margin}
-                variant={variant}    
-                required={required ? true : false}            
+                required={required ? true : false}      
+                {...props}
                 />
-        </ThemeProvider>
     )
 }

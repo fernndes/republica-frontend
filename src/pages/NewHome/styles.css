@@ -1,0 +1,28 @@
+.section-new-home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.input-new-home {
+    flex: 1;
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+
+#uf {
+    flex: none;
+    width: 50px;
+}
+
+.mgRight {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-new-home {
+        min-width: 0;
+    }
+}

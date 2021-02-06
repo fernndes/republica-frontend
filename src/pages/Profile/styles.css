@@ -10,10 +10,12 @@
 }
 
 .section-profile {
-    /* border: 4px solid transparent;
-    border-image: linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%);
-    border-image-slice: 1; */
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .menu-profile {
@@ -24,7 +26,6 @@
 .btn-home, .btn-evaluate {
     margin: 0;
     padding: 0 20px;
-    margin-right: 20px;
     /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
 }
 
@@ -34,4 +35,24 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-profile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+    }
+    .menu-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section-profile-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
 }

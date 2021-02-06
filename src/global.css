@@ -21,6 +21,21 @@ a {
   text-decoration: none;
 }
 
+input {
+  padding-left: 16px;
+  display: flex;
+  min-height: 60px;
+}
+
+input:hover {
+  border: 2px solid blueviolet ;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blueviolet ;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,25 +46,25 @@ a {
   background-image: linear-gradient(to right, #905DDE 30%, #7633DE  90%); /* #014F68 or #0086B0, #006C8E*/ 
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 40px 40px 40px;
-  border-radius: var(--border-radius-container);
-  background-color: white;
-}
 
-.form {
-  display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.title {
-  color: #484848;
+.submit-button {
+  font-family: inherit;
+  font-size: 1.0rem;
+  text-transform: uppercase;
   font-weight: 500;
-  line-height: 1.5;
+  border-radius: var(--border-radius-button);
+  height: 60px;
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0px 20px;
+  }
 }
