@@ -4,20 +4,29 @@ Este projeto tem como objetivo criar uma plataforma fictícia para conectar pess
 
 ## Tecnologias :rocket: 
 
- Front: <br/>
- - React JS <br/>
- - Axios <br/>
- - React Router <br/>
- - Dotenv <br/>
- 
- Back: <br/>
- - Node.js <br/>
- - Express <br/>
- - Node-postgres <br/>
- - Cors <br/>
- - Dotenv <br/>
- - Celebrate <br/>
- - bcryptjs <br/>
+<table border="0">
+ <tr>
+    <td width="300px"><b style="font-size:30px"> Front:</b></td>
+    <td width="300px"><b style="font-size:30px"> Back:</b></td>
+ </tr>
+ <tr>
+    <td> 
+     - React JS <br/>
+     - Axios <br/>
+     - React Router <br/>
+     - Dotenv <br/>
+  </td>
+    <td>
+     - Node.js <br/>
+     - Express <br/>
+     - Node-postgres <br/>
+     - Cors <br/>
+     - Dotenv <br/>
+     - Celebrate <br/>
+     - bcryptjs <br/>
+  </td>
+ </tr>
+</table>
  
 Deploy: Heroku para front e backend.
  
@@ -39,16 +48,26 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
 
 ### Etapa 1/4 :heavy_check_mark:
 
-CANDIDATOS: <br/>
- - [x] Listar moradias disponíveis; <br/>
- - [x] Visualizar contato do "recrutador". <br/>
-
-"RECRUTADORES": <br/>
-- [x] Cadastrar-se na plataforma; <br/>
-- [x] Autenticar-se na plataforma; <br/>
-- [x] Cadastrar moradia; <br/>
-- [x] Excluir moraria; <br/>
-- [x] Listar moradias cadastradas. <br/>
+<table border="0">
+ <tr>
+    <td width="300px"><b style="font-size:30px"> Candidatos</b></td>
+    <td width="300px"><b style="font-size:30px"> "Recrutadores"</b></td>
+ </tr>
+ <tr>
+  <td>
+   :white_check_mark: Listar moradias disponíveis; <br/>
+   :white_check_mark: Visualizar contato do "recrutador". <br/>
+  </td>
+  <td>
+   :white_check_mark: Cadastrar-se na plataforma; <br/>
+   :white_check_mark: Autenticar-se na plataforma; <br/>
+   :white_check_mark: Cadastrar moradia; <br/>
+   :white_check_mark: Excluir moraria; <br/>
+   :white_check_mark: Listar moradias cadastradas. <br/>
+  </td>
+ </tr>
+</table>
+</br>
 <p>
   <img src="https://user-images.githubusercontent.com/59981795/107121195-e5250800-686f-11eb-834e-9bab4359c66f.png" width="350" alt="login">
   <img src="https://user-images.githubusercontent.com/59981795/107121285-55338e00-6870-11eb-898f-76cf1a604c39.png" width="350" alt="signup">
@@ -58,30 +77,59 @@ CANDIDATOS: <br/>
 
 ### Etapa 2/4 :clock130:
 
-CANDIDATOS: <br/>
-- [ ] Filtrar moradias; <br/>
-- [ ] Visualizar moradias no mapa. <br/>
-
-"RECRUTADORES": <br/>
-- [ ] Adicionar foto da moradia; <br/>
-- [ ] Adicionar calendario com horários para visitas. <br/>
+<table border="0">
+ <tr>
+    <td width="400px"><b style="font-size:30px"> Candidatos</b></td>
+    <td width="400px"><b style="font-size:30px"> "Recrutadores"</b></td>
+ </tr>
+ <tr>
+  <td>
+   :black_square_button: Filtrar moradias; <br/>
+   :black_square_button: Visualizar moradias no mapa. <br/>
+  </td>
+  <td>
+   :black_square_button: Filtrar moradias; <br/>
+   :black_square_button: Adicionar calendario com horários para visitas. <br/>
+  </td>
+ </tr>
+</table>
 
 ### Etapa 3/4 :clock130:
 
-CANDIDATOS: <br/>
-- [ ] Cadastrar-se na plataforma; <br/>
-- [ ] Autenticar-se na plataforma. <br/>
-
-"RECRUTADORES": <br/>
-- [ ] Definir critérios de avaliação; <br/>
-- [ ] Avaliar candidatos após visita. <br/>
+<table border="0">
+ <tr>
+    <td width="400px"><b style="font-size:30px"> Candidatos</b></td>
+    <td width="400px"><b style="font-size:30px"> "Recrutadores"</b></td>
+ </tr>
+ <tr>
+  <td>
+   :black_square_button: Cadastrar-se na plataforma; <br/>
+   :black_square_button: Autenticar-se na plataforma. <br/>
+  </td>
+  <td>
+   :black_square_button: Definir critérios de avaliação; <br/>
+   :black_square_button: Avaliar candidatos após visita. <br/>
+  </td>
+ </tr>
+</table>
 
 ### Etapa 4/4 :clock130:
 
 Recomendar candidatos para recrutadores. <br/>
 
-CANDIDATOS: <br/>
-- [ ] Responder formulário para definição de perfil virtual.
+<table border="0">
+ <tr>
+    <td width="400px"><b style="font-size:30px"> Candidatos</b></td>
+    <td width="400px"><b style="font-size:30px"> "Recrutadores"</b></td>
+ </tr>
+ <tr>
+  <td>
+   :black_square_button: Responder formulário para definição de perfil virtual. <br/>
+  </td>
+  <td>
+  </td>
+ </tr>
+</table>
 
 
 
