@@ -2,7 +2,7 @@
 
 Este projeto tem como objetivo criar uma plataforma fictícia para conectar pessoas que estão à procura de parceiros de moradia em universidades.
 
-## TECNOLOGIAS UTILIZADAS :rocket: 
+## Tecnologias :rocket: 
 
  Front: <br/>
  - React JS <br/>
@@ -19,13 +19,25 @@ Este projeto tem como objetivo criar uma plataforma fictícia para conectar pess
  - Celebrate <br/>
  - bcryptjs <br/>
  
- Deploy: Heroku para front e backend.
+Deploy: Heroku para front e backend.
+ 
+## Testando
 
-## ETAPAS
+Para clonar o repositório em sua máquina:
+```sh
+   git clone https://github.com/fernndes/republica-frontend.git
+```
+Para rodar o projeto:
+```sh
+  cd republica-frontend 
+  npm start 
+```
+
+## Etapas de desenvolvimento :bookmark_tabs:
 
 Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
 
-### ETAPA 1/4 :heavy_check_mark:
+### Etapa 1/4 :heavy_check_mark:
 
 CANDIDATOS: <br/>
  - [x] Listar moradias disponíveis; <br/>
@@ -44,7 +56,7 @@ CANDIDATOS: <br/>
   <img src="https://user-images.githubusercontent.com/59981795/107121354-b22f4400-6870-11eb-905c-2c2f6aabe1dd.png" width="350" alt="new-home">
 </p>
 
-### ETAPA 2/4 :clock130:
+### Etapa 2/4 :clock130:
 
 CANDIDATOS: <br/>
 - [ ] Filtrar moradias; <br/>
@@ -54,7 +66,7 @@ CANDIDATOS: <br/>
 - [ ] Adicionar foto da moradia; <br/>
 - [ ] Adicionar calendario com horários para visitas. <br/>
 
-### ETAPA 3/4 :clock130:
+### Etapa 3/4 :clock130:
 
 CANDIDATOS: <br/>
 - [ ] Cadastrar-se na plataforma; <br/>
@@ -64,7 +76,7 @@ CANDIDATOS: <br/>
 - [ ] Definir critérios de avaliação; <br/>
 - [ ] Avaliar candidatos após visita. <br/>
 
-### ETAPA 4/4 :clock130:
+### Etapa 4/4 :clock130:
 
 Recomendar candidatos para recrutadores. <br/>
 
