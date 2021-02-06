@@ -55,15 +55,15 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
  </tr>
  <tr>
   <td>
-   :white_check_mark: Listar moradias disponíveis; <br/>
-   :white_check_mark: Visualizar contato do "recrutador". <br/>
+   Listar moradias disponíveis; <br/>
+   Visualizar contato do "recrutador". <br/>
   </td>
   <td>
-   :white_check_mark: Cadastrar-se na plataforma; <br/>
-   :white_check_mark: Autenticar-se na plataforma; <br/>
-   :white_check_mark: Cadastrar moradia; <br/>
-   :white_check_mark: Excluir moraria; <br/>
-   :white_check_mark: Listar moradias cadastradas. <br/>
+   Cadastrar-se na plataforma; <br/>
+   Autenticar-se na plataforma; <br/>
+   Cadastrar moradia; <br/>
+   Excluir moraria; <br/>
+   Listar moradias cadastradas. <br/>
   </td>
  </tr>
 </table>
@@ -84,12 +84,12 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
  </tr>
  <tr>
   <td>
-   :black_square_button: Filtrar moradias; <br/>
-   :black_square_button: Visualizar moradias no mapa. <br/>
+   Filtrar moradias; <br/>
+   Visualizar moradias no mapa. <br/>
   </td>
   <td>
-   :black_square_button: Filtrar moradias; <br/>
-   :black_square_button: Adicionar calendario com horários para visitas. <br/>
+   Filtrar moradias; <br/>
+   Adicionar calendario com horários para visitas. <br/>
   </td>
  </tr>
 </table>
@@ -103,12 +103,12 @@ Agentes: Candidatos e "Recrutadores"(pessoa que anuncia a moradia).
  </tr>
  <tr>
   <td>
-   :black_square_button: Cadastrar-se na plataforma; <br/>
-   :black_square_button: Autenticar-se na plataforma. <br/>
+   Cadastrar-se na plataforma; <br/>
+   Autenticar-se na plataforma. <br/>
   </td>
   <td>
-   :black_square_button: Definir critérios de avaliação; <br/>
-   :black_square_button: Avaliar candidatos após visita. <br/>
+   Definir critérios de avaliação; <br/>
+   Avaliar candidatos após visita. <br/>
   </td>
  </tr>
 </table>
@@ -124,7 +124,7 @@ Recomendar candidatos para recrutadores. <br/>
  </tr>
  <tr>
   <td>
-   :black_square_button: Responder formulário para definição de perfil virtual. <br/>
+   Responder formulário para definição de perfil virtual. <br/>
   </td>
   <td>
   </td>
