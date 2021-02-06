@@ -15,6 +15,7 @@ Este projeto tem como objetivo criar uma plataforma fictícia para conectar pess
      - Axios <br/>
      - React Router <br/>
      - Dotenv <br/>
+     - Viacep <br/>
   </td>
     <td>
      - Node.js <br/>
